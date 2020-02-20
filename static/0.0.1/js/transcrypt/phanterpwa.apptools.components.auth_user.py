@@ -999,7 +999,7 @@ class AlertActivationAccount(top_slide.TopSlide):
         self.element_target = jQuery(self.target_selector)
         self.clear_errors()
         window.PhanterPWA.activation_account(
-            self.element_target.find("#phanterpwa-widget-input-input-activation-csrf_token").val(),
+            self.element_target.find("#phanterpwa-widget-input-activation-csrf_token").val(),
             self.element_target.find("#phanterpwa-widget-input-input-activation-activation_code").val(),
             callback=self.after_submit
         )
