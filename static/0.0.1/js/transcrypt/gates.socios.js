@@ -1,4 +1,4 @@
-// Transcrypt'ed from Python, 2020-02-20 14:42:25
+// Transcrypt'ed from Python, 2020-02-20 20:46:54
 import {AssertionError, AttributeError, BaseException, DeprecationWarning, Exception, IndexError, IterableError, KeyError, NotImplementedError, RuntimeWarning, StopIteration, UserWarning, ValueError, Warning, __JsIterator__, __PyIterator__, __Terminal__, __add__, __and__, __call__, __class__, __envir__, __eq__, __floordiv__, __ge__, __get__, __getcm__, __getitem__, __getslice__, __getsm__, __gt__, __i__, __iadd__, __iand__, __idiv__, __ijsmod__, __ilshift__, __imatmul__, __imod__, __imul__, __in__, __init__, __ior__, __ipow__, __irshift__, __isub__, __ixor__, __jsUsePyNext__, __jsmod__, __k__, __kwargtrans__, __le__, __lshift__, __lt__, __matmul__, __mergefields__, __mergekwargtrans__, __mod__, __mul__, __ne__, __neg__, __nest__, __or__, __pow__, __pragma__, __proxy__, __pyUseJsNext__, __rshift__, __setitem__, __setproperty__, __setslice__, __sort__, __specialattrib__, __sub__, __super__, __t__, __terminal__, __truediv__, __withblock__, __xor__, abs, all, any, assert, bool, bytearray, bytes, callable, chr, copy, deepcopy, delattr, dict, dir, divmod, enumerate, filter, float, getattr, hasattr, input, int, isinstance, issubclass, len, list, map, max, min, object, ord, pow, print, property, py_TypeError, py_iter, py_metatype, py_next, py_reversed, py_typeof, range, repr, round, set, setattr, sorted, str, sum, tuple, zip} from './org.transcrypt.__runtime__.js';
 import * as modal from './phanterpwa.apptools.components.modal.js';
 import * as forms from './phanterpwa.apptools.forms.js';
@@ -282,10 +282,12 @@ export var Socios =  __class__ ('Socios', [helpers.XmlConstructor], {
 			new_select_widget.html_to ('#phanterpwa-input-search_field');
 			new_select_widget.reload ();
 			var table = XTABLE ('socios-table', XTRH ('socios-table-head', ...socios.searcher.data_set, DIV (I (__kwargtrans__ ({_class: 'fas fa-plus'})), __kwargtrans__ (dict ({'_phanterpwa-way': 'socios/novo', '_class': 'icon_button wave_on_click'}))), __kwargtrans__ ({sort_by: socios.searcher.sort_by, sort_order: socios.searcher.sort_order, sortable: socios.searcher.sortable, on_click_sortable: self._on_sort})));
-			for (var x of socios.data) {
-				table.append (XTRD ('socios-table-data-{0}'.format (x.id), x.id, x.nome_completo, validations.format_iso_date_datetime (x.data_de_nascimento, 'dd/MM/yyyy', 'date'), x.cpf, x.nome_da_mae, x.nome_do_pai, widgets.MenuBox ('drop_{0}'.format (x.id), __kwargtrans__ ({xml_menu: UL (LI ('Editar', __kwargtrans__ (dict ({'_class': 'botao_editar_socio', '_phanterpwa-way': 'socios/{0}/editar'.format (x.id)}))), LI ('Visualizar', __kwargtrans__ (dict ({'_class': 'botao_visualizar_socio', '_phanterpwa-way': 'socios/{0}/visualizar'.format (x.id)}))), __kwargtrans__ (dict ({'data-menubox': 'drop_{0}'.format (x.id), '_class': 'dropdown-content'})))}))));
+			if (socios.data !== undefined) {
+				for (var x of socios.data) {
+					table.append (XTRD ('socios-table-data-{0}'.format (x.id), x.id, x.nome_completo, validations.format_iso_date_datetime (x.data_de_nascimento, 'dd/MM/yyyy', 'date'), x.cpf, x.nome_da_mae, x.nome_do_pai, widgets.MenuBox ('drop_{0}'.format (x.id), __kwargtrans__ ({xml_menu: UL (LI ('Editar', __kwargtrans__ (dict ({'_class': 'botao_editar_socio', '_phanterpwa-way': 'socios/{0}/editar'.format (x.id)}))), LI ('Visualizar', __kwargtrans__ (dict ({'_class': 'botao_visualizar_socio', '_phanterpwa-way': 'socios/{0}/visualizar'.format (x.id)}))), __kwargtrans__ (dict ({'data-menubox': 'drop_{0}'.format (x.id), '_class': 'dropdown-content'})))}))));
+				}
+				table.append (XFOOTER ('socios-table-footer', __kwargtrans__ ({page: socios.searcher.page, total_pages: socios.searcher.total_pages, on_click_page: self._on_page})));
 			}
-			table.append (XFOOTER ('socios-table-footer', __kwargtrans__ ({page: socios.searcher.page, total_pages: socios.searcher.total_pages, on_click_page: self._on_page})));
 			var editar_socio = function (el) {
 				if (arguments.length) {
 					var __ilastarg0__ = arguments.length - 1;

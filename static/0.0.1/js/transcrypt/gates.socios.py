@@ -37,21 +37,6 @@ class Index(handler.GateHandler):
     def initialize(self):
         self.requires_login = True
 
-    # def on_credentials_fail(self):
-    #     if self._credentials is 401:
-    #         html = self.html_error_base.jquery()
-    #         html.find(".image-warnings").attr(
-    #             "src", "/static/{0}/images/warning.png".format(window.PhanterPWA.VERSION))
-    #         html.find("#content-warning").html("Para ter acesso a este recurso é preciso estar logado!")
-    #         jQuery("#main-container").html(html)
-    #     elif self._credentials is 403:
-    #         html = DIV(
-    #             "Você não tem credenciais suficientes para acessar esta página"
-    #         )
-    #         jQuery("#main-container").html(html.jquery())
-    #     else:
-    #         window.PhanterPWA.open_code_way(self._credentials, self._request)
-
     def start(self):
         html = CONCATENATE(
             DIV(
@@ -196,7 +181,6 @@ class Socios(helpers.XmlConstructor):
                 })
 
             else:
-
                 window.PhanterPWA.ApiServer.GET(**{
                     'url_args': ["api", "socios"],
                     'onComplete': lambda data: lista_de_socios(data.responseJSON)
@@ -236,43 +220,44 @@ class Socios(helpers.XmlConstructor):
                     on_click_sortable=self._on_sort,
                 )
             )
-            for x in socios.data:
-                table.append(
-                    XTRD(
-                        "socios-table-data-{0}".format(x.id),
-                        x.id,
-                        x.nome_completo,
-                        validations.format_iso_date_datetime(
-                            x.data_de_nascimento, "dd/MM/yyyy", "date"
-                        ),
-                        x.cpf,
-                        x.nome_da_mae,
-                        x.nome_do_pai,
-                        widgets.MenuBox(
-                            "drop_{0}".format(x.id),
-                            xml_menu=UL(
-                                LI("Editar", **{
-                                    "_class": "botao_editar_socio",
-                                    "_phanterpwa-way": "socios/{0}/editar".format(x.id)
-                                }),
-                                LI("Visualizar", **{
-                                    "_class": "botao_visualizar_socio",
-                                    "_phanterpwa-way": "socios/{0}/visualizar".format(x.id)
-                                }),
-                                **{"data-menubox": "drop_{0}".format(x.id),
-                                "_class": 'dropdown-content'},
+            if socios.data is not js_undefined:
+                for x in socios.data:
+                    table.append(
+                        XTRD(
+                            "socios-table-data-{0}".format(x.id),
+                            x.id,
+                            x.nome_completo,
+                            validations.format_iso_date_datetime(
+                                x.data_de_nascimento, "dd/MM/yyyy", "date"
+                            ),
+                            x.cpf,
+                            x.nome_da_mae,
+                            x.nome_do_pai,
+                            widgets.MenuBox(
+                                "drop_{0}".format(x.id),
+                                xml_menu=UL(
+                                    LI("Editar", **{
+                                        "_class": "botao_editar_socio",
+                                        "_phanterpwa-way": "socios/{0}/editar".format(x.id)
+                                    }),
+                                    LI("Visualizar", **{
+                                        "_class": "botao_visualizar_socio",
+                                        "_phanterpwa-way": "socios/{0}/visualizar".format(x.id)
+                                    }),
+                                    **{"data-menubox": "drop_{0}".format(x.id),
+                                    "_class": 'dropdown-content'},
+                                )
                             )
                         )
                     )
+                table.append(
+                    XFOOTER(
+                        "socios-table-footer",
+                        page=socios.searcher.page,
+                        total_pages=socios.searcher.total_pages,
+                        on_click_page=self._on_page,
+                    )
                 )
-            table.append(
-                XFOOTER(
-                    "socios-table-footer",
-                    page=socios.searcher.page,
-                    total_pages=socios.searcher.total_pages,
-                    on_click_page=self._on_page,
-                )
-            )
             def editar_socio(el):
                 id_socio = jQuery(el).attr("register_target")
                 socios_editar_novo.start(id_socio)
