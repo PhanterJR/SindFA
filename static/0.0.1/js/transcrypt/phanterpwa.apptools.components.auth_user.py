@@ -334,6 +334,7 @@ class AuthUser(application.Component):
 class ModalLogin(modal.Modal):
     def __init__(self, target_element):
         self.element_target = jQuery(target_element)
+
         AuthUserCmp = window.PhanterPWA.Components["auth_user"]
         self.AuthUser = None
         if AuthUserCmp is not None and AuthUserCmp is not js_undefined and not isinstance(AuthUserCmp, AuthUser):
@@ -931,6 +932,7 @@ class AlertActivationAccount(top_slide.TopSlide):
     def binds(self):
         forms.SignForm("#form-activation")
         forms.ValidateForm("#form-activation")
+        self.element_target = jQuery(self.target_selector)
         self.element_target.find("#phanterpwa-widget-form-submit_button-activation").off(
             'click.modal_submit_activation'
         ).on(
