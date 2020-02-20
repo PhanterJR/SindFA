@@ -35,24 +35,28 @@ class TopSlide(helpers.XmlConstructor):
         helpers.XmlConstructor.__init__(self, "div", False, *content, **parameters)
 
     def switch(self):
+        self.element_target = jQuery(self.target_selector)
         if self.element_target.find("#phanterpwa-component-topslide-wrapper").hasClass("enabled"):
             self.close()
         else:
             self.open()
 
     def close(self):
+        self.element_target = jQuery(self.target_selector)
         self.element_target.find("#phanterpwa-component-topslide-wrapper").slideUp()
 
     def open(self):
+        self.element_target = jQuery(self.target_selector)
         self.start()
         self.element_target.find("#phanterpwa-component-topslide-wrapper").slideDown()
         if self._after_open is not None and self._after_open is not js_undefined:
             self._after_open(self.element_target.find("#phanterpwa-component-topslide-wrapper"))
 
     def start(self):
+        self.element_target = jQuery(self.target_selector)
         if self.element_target is not None and self.element_target is not js_undefined:
             self.element_target.find('#phanterpwa-component-topslide-wrapper').remove()
-            self.element_target.append(self.jquery())
+            self.append_to(self.element_target)
             self.element_target.find(".phanterpwa-component-topslide-close").off(
                 "click.phanterpwa_component_topslide_close"
             ).on(

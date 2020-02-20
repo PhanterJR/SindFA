@@ -1,4 +1,4 @@
-// Transcrypt'ed from Python, 2020-02-20 05:15:35
+// Transcrypt'ed from Python, 2020-02-20 16:00:38
 import {AssertionError, AttributeError, BaseException, DeprecationWarning, Exception, IndexError, IterableError, KeyError, NotImplementedError, RuntimeWarning, StopIteration, UserWarning, ValueError, Warning, __JsIterator__, __PyIterator__, __Terminal__, __add__, __and__, __call__, __class__, __envir__, __eq__, __floordiv__, __ge__, __get__, __getcm__, __getitem__, __getslice__, __getsm__, __gt__, __i__, __iadd__, __iand__, __idiv__, __ijsmod__, __ilshift__, __imatmul__, __imod__, __imul__, __in__, __init__, __ior__, __ipow__, __irshift__, __isub__, __ixor__, __jsUsePyNext__, __jsmod__, __k__, __kwargtrans__, __le__, __lshift__, __lt__, __matmul__, __mergefields__, __mergekwargtrans__, __mod__, __mul__, __ne__, __neg__, __nest__, __or__, __pow__, __pragma__, __proxy__, __pyUseJsNext__, __rshift__, __setitem__, __setproperty__, __setslice__, __sort__, __specialattrib__, __sub__, __super__, __t__, __terminal__, __truediv__, __withblock__, __xor__, abs, all, any, assert, bool, bytearray, bytes, callable, chr, copy, deepcopy, delattr, dict, dir, divmod, enumerate, filter, float, getattr, hasattr, input, int, isinstance, issubclass, len, list, map, max, min, object, ord, pow, print, property, py_TypeError, py_iter, py_metatype, py_next, py_reversed, py_typeof, range, repr, round, set, setattr, sorted, str, sum, tuple, zip} from './org.transcrypt.__runtime__.js';
 import * as handler from './phanterpwa.apptools.handler.js';
 import * as application from './phanterpwa.apptools.application.js';
@@ -592,7 +592,7 @@ export var ModalLogin =  __class__ ('ModalLogin', [modal.Modal], {
 					self.AuthUser.modal_change_password (__kwargtrans__ ({temporary_password: json.used_temporary}));
 				}
 			}
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 			var LeftBar = window.PhanterPWA.Components ['left_bar'];
 			if (LeftBar !== null && LeftBar !== undefined) {
 				LeftBar.reload ();
@@ -600,7 +600,7 @@ export var ModalLogin =  __class__ ('ModalLogin', [modal.Modal], {
 		}
 		else if (data.status == 400) {
 			var json = data.responseJSON;
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 			forms.SignForm ('#form-login', __kwargtrans__ ({has_captcha: true}));
 			var errors = dict (json ['errors']);
 			if (errors !== undefined) {
@@ -766,7 +766,7 @@ export var ModalRegister =  __class__ ('ModalRegister', [modal.Modal], {
 				self.AuthUser.start ();
 			}
 			self.close ();
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 			var LeftBar = window.PhanterPWA.Components ['left_bar'];
 			if (LeftBar !== null && LeftBar !== undefined) {
 				LeftBar.reload ();
@@ -774,7 +774,7 @@ export var ModalRegister =  __class__ ('ModalRegister', [modal.Modal], {
 		}
 		else if (data.status == 400) {
 			var json = data.responseJSON;
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 			forms.SignForm ('#form-register', __kwargtrans__ ({has_captcha: true}));
 			var errors = dict (json ['errors']);
 			if (errors !== undefined) {
@@ -941,7 +941,7 @@ export var ModalRequestPassword =  __class__ ('ModalRequestPassword', [modal.Mod
 		if (ajax_status == 'success') {
 			var json = data.responseJSON;
 			self.close ();
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 			var LeftBar = window.PhanterPWA.Components ['left_bar'];
 			if (LeftBar !== null && LeftBar !== undefined) {
 				LeftBar.reload ();
@@ -949,7 +949,7 @@ export var ModalRequestPassword =  __class__ ('ModalRequestPassword', [modal.Mod
 		}
 		else if (data.status == 400) {
 			var json = data.responseJSON;
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 			forms.SignForm ('#form-request_password', __kwargtrans__ ({has_captcha: true}));
 			var errors = dict (json ['errors']);
 			if (errors !== undefined) {
@@ -996,7 +996,7 @@ export var AlertActivationAccount =  __class__ ('AlertActivationAccount', [top_s
 		}
 		else {
 		}
-		var content = DIV (DIV (I18N ('{0}{1}{2}'.format ('Your account has not yet been activated,', ' when you created it, the activation code was sent to', ' the registered email address. Check your email and add', ' the code in the field below.'), __kwargtrans__ (dict ({'_pt-br': '{0}{1}{2}'.format ('Sua conta ainda não foi ativada, ao criá-la foi enviado', ' ao email cadastrado o código de ativação. Check seu ', 'email e adicione o código no campo abaixo.')}))), __kwargtrans__ ({_class: 'phanterpwa-auth_user-activation-text'})), FORM (DIV (DIV (forms.FormWidget ('activation', 'activation_code', __kwargtrans__ (dict ({'type': 'string', 'label': I18N ('Activation Code', __kwargtrans__ (dict ({'_pt-br': 'Código de Ativação'}))), 'phanterpwa': dict ({'validators': ['IS_NOT_EMPTY', 'IS_ACTIVATION_CODE']})}))), __kwargtrans__ ({_class: 'phanterpwa-auth_user-activation-action-input'})), DIV (forms.SubmitButton ('activation', I18N ('Activate', __kwargtrans__ (dict ({'_pt-br': 'Ativar'}))), __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), forms.FormButton ('activation_new_code', I18N ('Request Activation Code', __kwargtrans__ (dict ({'_pt-br': 'Requisitar novo código'}))), __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), __kwargtrans__ ({_class: 'phanterpwa-form-buttons-container'})), __kwargtrans__ ({_class: 'phanterpwa-auth_user-activation-actions-activate'})), __kwargtrans__ (dict ({'_class': 'phanterpwa-auth_user-activation-actions-container', '_phanterpwa-form': 'activation', '_id': 'form-activation'}))), __kwargtrans__ ({_class: 'phanterpwa-auth_user-activation-container'}));
+		var content = DIV (__kwargtrans__ ({_id: 'phanterpwa-top-slide-auth_user-activation-container', _class: 'phanterpwa-auth_user-activation-container'}));
 		var parameters = dict (__kwargtrans__ ({after_open: self.binds}));
 		top_slide.TopSlide.__init__ (self, target_element, content, __kwargtrans__ (parameters));
 	});},
@@ -1014,6 +1014,7 @@ export var AlertActivationAccount =  __class__ ('AlertActivationAccount', [top_s
 		}
 		else {
 		}
+		self._process_alert_content ();
 		forms.SignForm ('#form-activation');
 		forms.ValidateForm ('#form-activation');
 		self.element_target = $ (self.target_selector);
@@ -1044,6 +1045,23 @@ export var AlertActivationAccount =  __class__ ('AlertActivationAccount', [top_s
 			return self.request_new_activation_code_to_send_to_email ();
 		}));
 	});},
+	get _process_alert_content () {return __get__ (this, function (self) {
+		if (arguments.length) {
+			var __ilastarg0__ = arguments.length - 1;
+			if (arguments [__ilastarg0__] && arguments [__ilastarg0__].hasOwnProperty ("__kwargtrans__")) {
+				var __allkwargs0__ = arguments [__ilastarg0__--];
+				for (var __attrib0__ in __allkwargs0__) {
+					switch (__attrib0__) {
+						case 'self': var self = __allkwargs0__ [__attrib0__]; break;
+					}
+				}
+			}
+		}
+		else {
+		}
+		var html = CONCATENATE (DIV (I18N ('{0}{1}{2}'.format ('Your account has not yet been activated,', ' when you created it, the activation code was sent to', ' the registered email address. Check your email and add', ' the code in the field below.'), __kwargtrans__ (dict ({'_pt-br': '{0}{1}{2}'.format ('Sua conta ainda não foi ativada, ao criá-la foi enviado', ' ao email cadastrado o código de ativação. Check seu ', 'email e adicione o código no campo abaixo.')}))), __kwargtrans__ ({_class: 'phanterpwa-auth_user-activation-text'})), FORM (DIV (DIV (forms.FormWidget ('activation', 'activation_code', __kwargtrans__ (dict ({'type': 'string', 'label': I18N ('Activation Code', __kwargtrans__ (dict ({'_pt-br': 'Código de Ativação'}))), 'validators': ['IS_NOT_EMPTY', 'IS_ACTIVATION_CODE']}))), __kwargtrans__ ({_class: 'phanterpwa-auth_user-activation-action-input'})), DIV (forms.SubmitButton ('activation', I18N ('Activate', __kwargtrans__ (dict ({'_pt-br': 'Ativar'}))), __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), forms.FormButton ('activation_new_code', I18N ('Request Activation Code', __kwargtrans__ (dict ({'_pt-br': 'Requisitar novo código'}))), __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), __kwargtrans__ ({_class: 'phanterpwa-form-buttons-container'})), __kwargtrans__ ({_class: 'phanterpwa-auth_user-activation-actions-activate'})), __kwargtrans__ (dict ({'_class': 'phanterpwa-auth_user-activation-actions-container', '_phanterpwa-form': 'activation', '_id': 'form-activation'}))));
+		html.html_to ('#phanterpwa-top-slide-auth_user-activation-container');
+	});},
 	get after_activation_code_send () {return __get__ (this, function (self, data, ajax_status) {
 		if (arguments.length) {
 			var __ilastarg0__ = arguments.length - 1;
@@ -1063,11 +1081,11 @@ export var AlertActivationAccount =  __class__ ('AlertActivationAccount', [top_s
 		if (ajax_status == 'success') {
 			var json = data.responseJSON;
 			var message = json.i18n.message;
-			window.PhanterPWA.flash (dict ({'html': message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': message})));
 		}
 		else if (data.status == 400) {
 			var json = data.responseJSON;
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 			forms.SignForm ('#form-activation', __kwargtrans__ ({has_captcha: true}));
 			var errors = dict (json ['errors']);
 			if (errors !== undefined) {
@@ -1109,6 +1127,7 @@ export var AlertActivationAccount =  __class__ ('AlertActivationAccount', [top_s
 		}
 		else {
 		}
+		self.element_target = $ (self.target_selector);
 		self.element_target.find ('.phanterpwa-widget-error').removeClass ('enabled').html ('');
 	});},
 	get after_submit () {return __get__ (this, function (self, data, ajax_status) {
@@ -1130,11 +1149,11 @@ export var AlertActivationAccount =  __class__ ('AlertActivationAccount', [top_s
 		if (ajax_status == 'success') {
 			var json = data.responseJSON;
 			self.close ();
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 		}
 		else if (data.status == 400) {
 			var json = data.responseJSON;
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 			forms.SignForm ('#form-activation');
 			var errors = dict (json ['errors']);
 			if (errors !== undefined) {
@@ -1160,6 +1179,7 @@ export var AlertActivationAccount =  __class__ ('AlertActivationAccount', [top_s
 		}
 		else {
 		}
+		self.element_target = $ (self.target_selector);
 		self.clear_errors ();
 		window.PhanterPWA.activation_account (self.element_target.find ('#phanterpwa-widget-input-input-activation-csrf_token').val (), self.element_target.find ('#phanterpwa-widget-input-input-activation-activation_code').val (), __kwargtrans__ ({callback: self.after_submit}));
 	});},
@@ -1295,7 +1315,7 @@ export var ModalChangePassword =  __class__ ('ModalChangePassword', [modal.Modal
 		if (ajax_status == 'success') {
 			var json = data.responseJSON;
 			self.close ();
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 			var LeftBar = window.PhanterPWA.Components ['left_bar'];
 			if (LeftBar !== null && LeftBar !== undefined) {
 				LeftBar.reload ();
@@ -1303,7 +1323,7 @@ export var ModalChangePassword =  __class__ ('ModalChangePassword', [modal.Modal
 		}
 		else if (data.status == 400) {
 			var json = data.responseJSON;
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 			forms.SignForm ('#form-change_password');
 			var errors = dict (json ['errors']);
 			if (errors !== undefined) {
@@ -1983,7 +2003,7 @@ export var Profile =  __class__ ('Profile', [handler.GateHandler], {
 		if (ajax_status == 'success') {
 			var json = data.responseJSON;
 			var message = json.i18n.message;
-			window.PhanterPWA.flash (dict ({'html': message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': message})));
 			if (data.status == 200) {
 				$ ('.phanterpwa-gallery-upload-input-file').val ('');
 				var auth_user = json.auth_user;
@@ -1995,7 +2015,7 @@ export var Profile =  __class__ ('Profile', [handler.GateHandler], {
 			forms.SignForm ('#form-profile');
 			var json = data.responseJSON;
 			var message = json.i18n.message;
-			window.PhanterPWA.flash (dict ({'html': message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': message})));
 		}
 	});},
 	get submit () {return __get__ (this, function (self) {
@@ -2191,11 +2211,11 @@ export var Lock =  __class__ ('Lock', [handler.GateHandler], {
 				LeftBar.reload ();
 			}
 			$ ('body').removeClass ('phanterpwa-lock');
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 		}
 		else if (data.status == 400) {
 			var json = data.responseJSON;
-			window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+			window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 			forms.SignLockForm ();
 			var errors = dict (json ['errors']);
 			if (errors !== undefined) {
@@ -2288,7 +2308,7 @@ export var Lock =  __class__ ('Lock', [handler.GateHandler], {
 			self.on_other_user_click ();
 		}
 		var json = data.responseJSON;
-		window.PhanterPWA.flash (dict ({'html': json.i18n.message}));
+		window.PhanterPWA.flash (__kwargtrans__ (dict ({'html': json.i18n.message})));
 	});},
 	get start () {return __get__ (this, function (self) {
 		if (arguments.length) {

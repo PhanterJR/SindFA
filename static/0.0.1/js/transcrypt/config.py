@@ -11,11 +11,11 @@ CONFIG = {
         "name": "SindFA",
         "title": "PhanterEDU",
         "version": "0.0.1",
-        "compilation": 2816,
+        "compilation": 2823,
         "author": "PhanterJR<phanterjr@conexaodidata.com.br>",
         "debug": True,
         "packaged": False,
-        "path": "d:\\GitHub\\SindFA"
+        "path": "D:\\Github\\SindFA"
     },
     "CONFIGJS": {
         "api_server_address": "https://sindfa.conexaodidata.com.br",
