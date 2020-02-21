@@ -360,7 +360,7 @@ class Socio(helpers.XmlConstructor):
         )
         footer = DIV(
             forms.SubmitButton(
-                "adicionar",
+                "adicionar_dependentes",
                 "Adicionar",
                 _class="btn-autoresize wave_on_click waves-phanterpwa"
             ),
@@ -376,7 +376,7 @@ class Socio(helpers.XmlConstructor):
             }
         )
         self.modal_dependentes.open()
-        jQuery("#phanterpwa-widget-form-submit_button-adicionar").off(
+        jQuery("#phanterpwa-widget-form-submit_button-adicionar_dependentes").off(
             "click.adicionar_dependentes"
         ).on(
             "click.adicionar_dependentes",
@@ -455,7 +455,7 @@ class Socio(helpers.XmlConstructor):
         )
         footer = DIV(
             forms.SubmitButton(
-                "adicionar",
+                "adicionar_naturalidade",
                 "Adicionar",
                 _class="btn-autoresize wave_on_click waves-phanterpwa"
             ),
@@ -471,7 +471,7 @@ class Socio(helpers.XmlConstructor):
             }
         )
         self.modal_naturalidade.open()
-        jQuery("#phanterpwa-widget-form-submit_button-adicionar").off(
+        jQuery("#phanterpwa-widget-form-submit_button-adicionar_naturalidade").off(
             "click.adicionar_naturalidade"
         ).on(
             "click.adicionar_naturalidade",
