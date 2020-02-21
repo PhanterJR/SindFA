@@ -29,5 +29,3 @@ def start(check_compilation=False):
         msg = "check_compilation[{0}]".format(config.CONFIG['PROJECT']['compilation'])
         console.log(msg)
         ws.send(msg)
-
-

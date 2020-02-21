@@ -1,4 +1,4 @@
-// Transcrypt'ed from Python, 2020-02-20 14:42:12
+// Transcrypt'ed from Python, 2020-02-21 00:47:27
 var config = {};
 var gatekeeper = {};
 var websocket = {};

@@ -1,4 +1,4 @@
-/* SASS Source Code (MAIN FILE): D:\Github\SindFA\apps\sindfa\sources\styles\application.sass */
+/* SASS Source Code (MAIN FILE): D:\GitHub\SindFA\apps\sindfa\sources\styles\application.sass */
 /* start change programmatically */
 /* end change programmatically */
 @font-face {
@@ -2966,7 +2966,7 @@ hr {
   color: #c8c364;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\application.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\application.sass */
 /* start change programmatically */
 /* end change programmatically */
 @font-face {
@@ -5934,7 +5934,7 @@ hr {
   color: #c8c364;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\breascrumbs.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\breascrumbs.sass */
 .phanterpwa-breadcrumb-wrapper {
   display: block;
   line-height: 2rem;
@@ -6034,7 +6034,7 @@ hr {
   }
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\buttons.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\buttons.sass */
 .btn {
   margin: 5px;
   padding: 5px;
@@ -6092,7 +6092,7 @@ hr {
   width: 100%;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\card.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\card.sass */
 .card {
   background-color: white;
   box-shadow: 0px 1px 2px grey;
@@ -6104,7 +6104,7 @@ hr {
   width: 100%;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\cmp_auth_user.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\cmp_auth_user.sass */
 body .cmp_user_login-container {
   opacity: 1;
   max-width: 300px;
@@ -6717,7 +6717,7 @@ body.p-lock #phanterpwa-component-left_bar-main_button.enabled {
   color: orange;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\datetimepicker.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\datetimepicker.sass */
 .phanterpwa-fixed-fulldisplay {
   transition: box-shadow 0.5s, -webkit-box-shadow 0.5s, width 0.5s ease, opacity 0.5s ease;
   opacity: 0;
@@ -7031,7 +7031,7 @@ body.p-lock #phanterpwa-component-left_bar-main_button.enabled {
   display: none;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\developer.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\developer.sass */
 #p-developer_toolbar {
   width: 100%;
 }
@@ -7137,7 +7137,7 @@ body.p-lock #phanterpwa-component-left_bar-main_button.enabled {
   }
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\easy.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\easy.sass */
 .e-padding_10 {
   padding: 10px !important;
 }
@@ -7195,7 +7195,7 @@ body.p-lock #phanterpwa-component-left_bar-main_button.enabled {
   color: red !important;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\flash.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\flash.sass */
 body #phanterpwa-flash-container {
   position: fixed;
   z-index: 3000;
@@ -7258,7 +7258,7 @@ body #phanterpwa-flash-container .phanterpwa-flash-wrapper {
   }
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\modal.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\modal.sass */
 @keyframes modalInFromNone {
   0% {
     display: none;
@@ -7371,7 +7371,7 @@ body #phanterpwa-flash-container .phanterpwa-flash-wrapper {
   margin-top: -30px;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\modal_login.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\modal_login.sass */
 .phanterpwa-component-modal-content-container .phanterpwa-auth_user-form-inputs #form-login-image-user-container {
   display: none;
 }
@@ -7392,7 +7392,7 @@ body #phanterpwa-flash-container .phanterpwa-flash-wrapper {
   display: block;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\pseudomodal.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\pseudomodal.sass */
 .phanterpwa-component-pseudomodal-container {
   position: absolute;
   z-index: 900;
@@ -7420,7 +7420,7 @@ body #phanterpwa-flash-container .phanterpwa-flash-wrapper {
   background-color: white;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\sections.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\sections.sass */
 .phanterpwa-xsection-container {
   position: relative;
   display: block;
@@ -7465,7 +7465,7 @@ body #phanterpwa-flash-container .phanterpwa-flash-wrapper {
   padding: 10px;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\widgets.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\widgets.sass */
 .phanterpwa-widget {
   position: relative;
   display: block;
@@ -8504,7 +8504,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   background-color: #e0e0e0;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\components\xtable.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\xtable.sass */
 .phanterpwa-widget.phanterpwa-widget-table-container {
   padding: 0;
   overflow: auto;
@@ -8660,7 +8660,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   padding: 5px;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\events\waves.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\events\waves.sass */
 .wave_on_click {
   overflow: hidden;
   position: relative;
@@ -8675,7 +8675,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   border-radius: 100%;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\alert_top_activation.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\alert_top_activation.sass */
 #phanterpwa-component-topslide-wrapper {
   display: none;
   position: fixed;
@@ -8756,7 +8756,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   }
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\capcha_preload.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\capcha_preload.sass */
 .phanterpwa-components-preloaders-android * {
   box-sizing: border-box;
 }
@@ -9173,7 +9173,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   }
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\captcha.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\captcha.sass */
 .phanterpwa-widget-captcha-container {
   text-align: center;
   height: 131px;
@@ -9539,7 +9539,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   fill-rule: nonzero;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\captcha_preload_image_3x4.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\captcha_preload_image_3x4.sass */
 .phanterpwa-components-preloaders-explosion * {
   box-sizing: border-box;
 }
@@ -9787,7 +9787,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   }
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\form.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\form.sass */
 #phanterpwa-jsonform-profile {
   padding: 20px 0;
 }
@@ -9847,7 +9847,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   width: 100%;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\form_login.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\form_login.sass */
 #modal_user_login #form-login-image-user-container, #modal_user_login #form-login-button-other-user-container {
   display: none;
 }
@@ -9883,7 +9883,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   color: grey;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\inputs.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\inputs.sass */
 .phanterpwa-container-input-text,
 .phanterpwa-container-input-password,
 .phanterpwa-container-input-checkbox,
@@ -9991,7 +9991,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   text-align: center;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\logo.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\logo.sass */
 .logo_fil0 {
   fill: #757575;
   fill-rule: nonzero;
@@ -10024,7 +10024,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   height: 100%;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\materialize.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\materialize.sass */
 .phanterpwa-materialize-input-text,
 .phanterpwa-materialize-input-password,
 .phanterpwa-materialize-input-checkbox,
@@ -10120,7 +10120,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   text-align: center;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\models.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\models.sass */
 .phanterpwa-models-titulo {
   text-align: center;
   padding: 20px 0 0 0;
@@ -10134,7 +10134,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   padding-right: 10px;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\phanterpwa_gallery.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\phanterpwa_gallery.sass */
 .phanterpwa-gallery-upload-image-button {
   color: #4e6eaa;
   text-align: center;
@@ -10178,7 +10178,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   position: relative;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\phanterpwa_gallery_cutter.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\phanterpwa_gallery_cutter.sass */
 /*PhanterGallery*/
 .phanterpwa-gallery-container-main {
   width: 100%;
@@ -10447,7 +10447,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   cursor: pointer;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\phantertables.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\phantertables.sass */
 .phanterpwa_tables_container {
   padding: 10px;
 }
@@ -10517,7 +10517,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   right: 0;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\progressbar.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\progressbar.sass */
 .main-progress-bar-container {
   height: 7px;
   width: 100%;
@@ -10654,7 +10654,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   }
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\extends\run_points.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\run_points.sass */
 .phanterpwa-components-preloaders-run_points * {
   box-sizing: border-box;
 }
@@ -10804,7 +10804,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   }
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\plugins\codemirror.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\plugins\codemirror.sass */
 .source_code-codemirror-wrapper {
   margin: 10px;
   padding: 5px;
@@ -10816,7 +10816,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   height: auto;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\routes\componentes.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\routes\componentes.sass */
 .icon_awesome-wrapper {
   font-size: 3rem;
   padding: 6px;
@@ -10861,7 +10861,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   cursor: pointer;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\routes\main.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\routes\main.sass */
 .promo-container {
   text-align: center;
   padding: 20px;
@@ -10906,7 +10906,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   margin: 0;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\routes\matricular.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\routes\matricular.sass */
 #lista-alunos-container.waiting .phanterpwa_tables_data_row {
   color: #E8E8E8;
 }
@@ -10983,7 +10983,7 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   text-align: center;
 }
 
-/* SASS Source Code: D:\Github\SindFA\apps\sindfa\sources\styles\routes\socios.sass */
+/* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\routes\socios.sass */
 #phanterpwa-container-input-text-value_select_uf .select-wrapper ul {
   max-height: 150px;
 }
