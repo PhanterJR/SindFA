@@ -11,15 +11,15 @@ CONFIG = {
         "name": "SindFA",
         "title": "PhanterEDU",
         "version": "0.0.1",
-        "compilation": 2838,
+        "compilation": 2839,
         "author": "PhanterJR<phanterjr@conexaodidata.com.br>",
         "debug": True,
         "packaged": False,
         "path": "D:\\GitHub\\SindFA"
     },
     "CONFIGJS": {
-        "api_server_address": "http://127.0.0.1:8801",
-        "api_websocket_address": "ws://127.0.0.1:8801/websocket",
+        "api_server_address": "https://sindfa.conexaodidata.com.br",
+        "api_websocket_address": "wss://sindfa.conexaodidata.com.br/websocket",
         "timeout_to_resign": 600
     }
 }
