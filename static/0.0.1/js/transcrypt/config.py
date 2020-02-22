@@ -11,7 +11,7 @@ CONFIG = {
         "name": "SindFA",
         "title": "PhanterEDU",
         "version": "0.0.1",
-        "compilation": 2857,
+        "compilation": 2862,
         "author": "PhanterJR<phanterjr@conexaodidata.com.br>",
         "debug": True,
         "packaged": False,
