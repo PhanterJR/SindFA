@@ -7,6 +7,7 @@ import phanterpwa.apptools.components.widgets as widgets
 import phanterpwa.apptools.components.left_bar as left_bar
 import phanterpwa.apptools.forms as forms
 import phanterpwa.apptools.components.modal as modal
+import phanterpwa.apptools.preloaders as preloaders
 
 __pragma__('alias', "jQuery", "$")
 __pragma__('skip')
@@ -33,6 +34,7 @@ XFOOTER = widgets.TableFooterPagination
 
 __pragma__('kwargs')
 
+
 class Index(handler.GateHandler):
     def initialize(self):
         self.requires_login = True
@@ -50,7 +52,10 @@ class Index(handler.GateHandler):
             ),
             DIV(
                 DIV(
-
+                    DIV(
+                        DIV(preloaders.android, _style="width: 300px; height: 300px; overflow: hidden; margin: auto;"),
+                        _style="text-align:center; padding: 50px 0;"
+                    ),
                     _id="content-socios",
                     _class='p-row card e-padding_20'
                 ),
@@ -134,7 +139,14 @@ class Socios(helpers.XmlConstructor):
                 _class="phanterpwa_tables_search_wrapper"
             ),
             DIV(_id='lista-socios-subtitle', _class="phanterpwa-subtitle"),
-            DIV(_id='lista-socios-container', _class="phanterpwa_tables_container"),
+            DIV(
+                DIV(
+                    DIV(preloaders.android, _style="width: 300px; height: 300px; overflow: hidden; margin: auto;"),
+                    _style="text-align:center; padding: 50px 0;"
+                ),
+                _id='lista-socios-container',
+                _class="phanterpwa_tables_container"
+            ),
             _class='socios-container phanterpwa-card-container'
         )
         helpers.XmlConstructor.__init__(self, "div", False, html, _class="lista_de_socios")

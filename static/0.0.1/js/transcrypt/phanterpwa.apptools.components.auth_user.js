@@ -1,4 +1,4 @@
-// Transcrypt'ed from Python, 2020-02-21 00:47:48
+// Transcrypt'ed from Python, 2020-02-22 03:14:51
 import {AssertionError, AttributeError, BaseException, DeprecationWarning, Exception, IndexError, IterableError, KeyError, NotImplementedError, RuntimeWarning, StopIteration, UserWarning, ValueError, Warning, __JsIterator__, __PyIterator__, __Terminal__, __add__, __and__, __call__, __class__, __envir__, __eq__, __floordiv__, __ge__, __get__, __getcm__, __getitem__, __getslice__, __getsm__, __gt__, __i__, __iadd__, __iand__, __idiv__, __ijsmod__, __ilshift__, __imatmul__, __imod__, __imul__, __in__, __init__, __ior__, __ipow__, __irshift__, __isub__, __ixor__, __jsUsePyNext__, __jsmod__, __k__, __kwargtrans__, __le__, __lshift__, __lt__, __matmul__, __mergefields__, __mergekwargtrans__, __mod__, __mul__, __ne__, __neg__, __nest__, __or__, __pow__, __pragma__, __proxy__, __pyUseJsNext__, __rshift__, __setitem__, __setproperty__, __setslice__, __sort__, __specialattrib__, __sub__, __super__, __t__, __terminal__, __truediv__, __withblock__, __xor__, abs, all, any, assert, bool, bytearray, bytes, callable, chr, copy, deepcopy, delattr, dict, dir, divmod, enumerate, filter, float, getattr, hasattr, input, int, isinstance, issubclass, len, list, map, max, min, object, ord, pow, print, property, py_TypeError, py_iter, py_metatype, py_next, py_reversed, py_typeof, range, repr, round, set, setattr, sorted, str, sum, tuple, zip} from './org.transcrypt.__runtime__.js';
 import * as handler from './phanterpwa.apptools.handler.js';
 import * as application from './phanterpwa.apptools.application.js';
@@ -2008,7 +2008,7 @@ export var Profile =  __class__ ('Profile', [handler.GateHandler], {
 				$ ('.phanterpwa-gallery-upload-input-file').val ('');
 				var auth_user = json.auth_user;
 				window.PhanterPWA.update_auth_user (auth_user);
-				self.update ();
+				self.reload ();
 			}
 		}
 		else {
@@ -2069,7 +2069,7 @@ export var Profile =  __class__ ('Profile', [handler.GateHandler], {
 		$ ('#phanterpwa-widget-form-submit_button-profile').off ('click.profile_button_save').on ('click.profile_button_save', self.submit);
 		$ ('#phanterpwa-widget-form-form_button-change_password').off ('click.profile_button_change_password').on ('click.profile_button_change_password', self.open_modal_change_password);
 	});},
-	get update () {return __get__ (this, function (self) {
+	get reload () {return __get__ (this, function (self) {
 		if (arguments.length) {
 			var __ilastarg0__ = arguments.length - 1;
 			if (arguments [__ilastarg0__] && arguments [__ilastarg0__].hasOwnProperty ("__kwargtrans__")) {
@@ -2127,9 +2127,9 @@ export var Profile =  __class__ ('Profile', [handler.GateHandler], {
 			var last_name = self.auth_user.last_name;
 			var email = self.auth_user.email;
 		}
-		var xml_content = CONCATENATE (DIV (DIV (DIV (DIV (I18N ('Profile', __kwargtrans__ (dict ({'_pt-br': 'Perfil'}))), __kwargtrans__ ({_class: 'phanterpwa-breadcrumb'})), __kwargtrans__ ({_class: 'phanterpwa-breadcrumb-wrapper'})), __kwargtrans__ ({_class: 'container'})), __kwargtrans__ ({_class: 'title_page_container card'})), DIV (DIV (DIV (DIV (FORM (DIV (DIV (DIV (preloaders.android, __kwargtrans__ ({_style: 'text-align:center;'})), __kwargtrans__ ({_id: 'profile-image-user-container', _class: 'p-row'})), __kwargtrans__ ({_class: 'p-col w1p100 l4'})), DIV (DIV (forms.FormWidget ('profile', 'first_name', __kwargtrans__ (dict ({'type': 'string', 'label': I18N ('First Name'), 'value': first_name, 'validators': ['IS_NOT_EMPTY'], '_class': 'p-col w1p100 w3p50'}))), forms.FormWidget ('profile', 'last_name', __kwargtrans__ (dict ({'type': 'string', 'label': I18N ('Last Name'), 'value': last_name, 'validators': ['IS_NOT_EMPTY'], '_class': 'p-col w1p100 w3p50'}))), forms.FormWidget ('profile', 'email', __kwargtrans__ (dict ({'type': 'string', 'label': I18N ('E-Mail'), 'value': email, 'validators': ['IS_EMAIL'], '_class': 'p-col w1p100'}))), __kwargtrans__ ({_class: 'p-row profile_inputs_container'})), DIV (forms.SubmitButton ('profile', I18N ('Save Changes', __kwargtrans__ (dict ({'_pt-br': 'Salvar Mudanças'}))), __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), forms.FormButton ('change_password', I18N ('Change Password', __kwargtrans__ (dict ({'_pt-br': 'Mudar Senha'}))), __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), __kwargtrans__ ({_class: 'phanterpwa-form-buttons-container'})), __kwargtrans__ ({_class: 'p-col w1p100'})), __kwargtrans__ (dict ({'_phanterpwa-form': 'profile', '_id': 'form-profile', '_class': 'p-row', '_autocomplete': 'off'}))), __kwargtrans__ ({_class: 'profile-container phanterpwa-card-container'})), __kwargtrans__ ({_class: 'card'})), __kwargtrans__ ({_class: 'new-container'})), __kwargtrans__ ({_class: 'phanterpwa-container container'})));
+		var xml_content = CONCATENATE (DIV (DIV (DIV (DIV (I18N ('Profile', __kwargtrans__ (dict ({'_pt-br': 'Perfil'}))), __kwargtrans__ ({_class: 'phanterpwa-breadcrumb'})), __kwargtrans__ ({_class: 'phanterpwa-breadcrumb-wrapper'})), __kwargtrans__ ({_class: 'container'})), __kwargtrans__ ({_class: 'title_page_container card'})), DIV (DIV (FORM (DIV (DIV (DIV (preloaders.android, __kwargtrans__ ({_style: 'text-align:center;'})), __kwargtrans__ ({_id: 'profile-image-user-container', _class: 'p-row'})), __kwargtrans__ ({_class: 'p-col w1p100 l4'})), DIV (DIV (forms.FormWidget ('profile', 'first_name', __kwargtrans__ (dict ({'type': 'string', 'label': I18N ('First Name'), 'value': first_name, 'validators': ['IS_NOT_EMPTY'], '_class': 'p-col w1p100 w3p50'}))), forms.FormWidget ('profile', 'last_name', __kwargtrans__ (dict ({'type': 'string', 'label': I18N ('Last Name'), 'value': last_name, 'validators': ['IS_NOT_EMPTY'], '_class': 'p-col w1p100 w3p50'}))), forms.FormWidget ('profile', 'email', __kwargtrans__ (dict ({'type': 'string', 'label': I18N ('E-Mail'), 'value': email, 'validators': ['IS_EMAIL'], '_class': 'p-col w1p100'}))), __kwargtrans__ ({_class: 'p-row profile_inputs_container'})), DIV (forms.SubmitButton ('profile', I18N ('Save Changes', __kwargtrans__ (dict ({'_pt-br': 'Salvar Mudanças'}))), __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), forms.FormButton ('change_password', I18N ('Change Password', __kwargtrans__ (dict ({'_pt-br': 'Mudar Senha'}))), __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), __kwargtrans__ ({_class: 'phanterpwa-form-buttons-container'})), __kwargtrans__ ({_class: 'p-col w1p100'})), __kwargtrans__ (dict ({'_phanterpwa-form': 'profile', '_id': 'form-profile', '_class': 'p-row', '_autocomplete': 'off'}))), __kwargtrans__ ({_class: 'e-margin_bottom_20 phanterpwa-card-container e-padding_20 card'})), __kwargtrans__ ({_class: 'phanterpwa-container container'})));
 		xml_content.html_to ('#main-container');
-		self.update ();
+		self.reload ();
 		self.binds ();
 	});}
 });

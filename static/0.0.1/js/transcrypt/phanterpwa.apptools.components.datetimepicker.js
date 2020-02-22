@@ -1,4 +1,4 @@
-// Transcrypt'ed from Python, 2020-02-21 00:47:36
+// Transcrypt'ed from Python, 2020-02-22 04:22:04
 import {AssertionError, AttributeError, BaseException, DeprecationWarning, Exception, IndexError, IterableError, KeyError, NotImplementedError, RuntimeWarning, StopIteration, UserWarning, ValueError, Warning, __JsIterator__, __PyIterator__, __Terminal__, __add__, __and__, __call__, __class__, __envir__, __eq__, __floordiv__, __ge__, __get__, __getcm__, __getitem__, __getslice__, __getsm__, __gt__, __i__, __iadd__, __iand__, __idiv__, __ijsmod__, __ilshift__, __imatmul__, __imod__, __imul__, __in__, __init__, __ior__, __ipow__, __irshift__, __isub__, __ixor__, __jsUsePyNext__, __jsmod__, __k__, __kwargtrans__, __le__, __lshift__, __lt__, __matmul__, __mergefields__, __mergekwargtrans__, __mod__, __mul__, __ne__, __neg__, __nest__, __or__, __pow__, __pragma__, __proxy__, __pyUseJsNext__, __rshift__, __setitem__, __setproperty__, __setslice__, __sort__, __specialattrib__, __sub__, __super__, __t__, __terminal__, __truediv__, __withblock__, __xor__, abs, all, any, assert, bool, bytearray, bytes, callable, chr, copy, deepcopy, delattr, dict, dir, divmod, enumerate, filter, float, getattr, hasattr, input, int, isinstance, issubclass, len, list, map, max, min, object, ord, pow, print, property, py_TypeError, py_iter, py_metatype, py_next, py_reversed, py_typeof, range, repr, round, set, setattr, sorted, str, sum, tuple, zip} from './org.transcrypt.__runtime__.js';
 import * as validations from './phanterpwa.apptools.validations.js';
 import * as helpers from './phanterpwa.apptools.helpers.js';
@@ -395,6 +395,7 @@ export var Datepickers =  __class__ ('Datepickers', [object], {
 			var value = value.py_replace ('MMM', self._sanitize_i18ns (self.months [smonth].__getslice__ (0, 3, 1)));
 		}
 		if (__in__ ('MM', value)) {
+			console.log (smonth);
 			var value = value.py_replace ('MM', self._zfill (smonth + 1, 2));
 		}
 		if (__in__ ('Mo', value)) {
@@ -450,6 +451,7 @@ export var Datepickers =  __class__ ('Datepickers', [object], {
 		}
 		else {
 		}
+		console.log (number);
 		var number = int (number);
 		var number = str (number);
 		var s = number;
@@ -1291,19 +1293,6 @@ export var Datepickers =  __class__ ('Datepickers', [object], {
 		else {
 		}
 		$ (self.target_selector).find ('.phanterpwa-fixed-fulldisplay').removeClass ('enabled');
-		setTimeout ((function __lambda__ () {
-			if (arguments.length) {
-				var __ilastarg0__ = arguments.length - 1;
-				if (arguments [__ilastarg0__] && arguments [__ilastarg0__].hasOwnProperty ("__kwargtrans__")) {
-					var __allkwargs0__ = arguments [__ilastarg0__--];
-					for (var __attrib0__ in __allkwargs0__) {
-					}
-				}
-			}
-			else {
-			}
-			return $ (self.target_selector).find ('.phanterpwa-fixed-fulldisplay').remove ();
-		}), 1000);
 	});},
 	get start () {return __get__ (this, function (self) {
 		if (arguments.length) {
@@ -1381,7 +1370,8 @@ export var Datepickers =  __class__ ('Datepickers', [object], {
 		if (self.date_type == 'date') {
 			var c_dt = ' phanterpwa_datetimepicker_is_not_datetime';
 		}
-		var centralizer = DIV (DIV (DIV (DIV (DIV (DIV (summary, container, __kwargtrans__ ({_class: 'phanterpwa_datetimepicker_container{0}'.format (c_dt)})), __kwargtrans__ ({_class: 'phanterpwa-centralizer-center'})), __kwargtrans__ ({_class: 'phanterpwa-centralizer-horizontal'})), __kwargtrans__ ({_class: 'phanterpwa-centralizer-vertical'})), __kwargtrans__ ({_class: 'phanterpwa-centralizer-wrapper'})), __kwargtrans__ ({_class: 'phanterpwa-fixed-fulldisplay'}));
+		var datetimepicker_container = DIV (summary, container, __kwargtrans__ ({_class: 'phanterpwa_datetimepicker_container{0}'.format (c_dt)}));
+		var centralizer = DIV (DIV (DIV (DIV (DIV (datetimepicker_container, __kwargtrans__ ({_id: 'phanterpwa-centralizer-center-{0}'.format (self.namespace), _class: 'phanterpwa-centralizer-center'})), __kwargtrans__ ({_class: 'phanterpwa-centralizer-horizontal'})), __kwargtrans__ ({_class: 'phanterpwa-centralizer-vertical'})), __kwargtrans__ ({_class: 'phanterpwa-centralizer-wrapper'})), __kwargtrans__ ({_class: 'phanterpwa-fixed-fulldisplay'}));
 		var _selecting = function (el) {
 			if (arguments.length) {
 				var __ilastarg0__ = arguments.length - 1;
@@ -1428,8 +1418,7 @@ export var Datepickers =  __class__ ('Datepickers', [object], {
 			}), 100);
 		};
 		if ($ (self.target_selector).has ('.phanterpwa-fixed-fulldisplay').length == 1) {
-			$ (self.target_selector).find ('.phanterpwa-fixed-fulldisplay').remove ();
-			centralizer.append_to (self.target_selector);
+			datetimepicker_container.html_to ('#phanterpwa-centralizer-center-{0}'.format (self.namespace));
 			$ (self.target_selector).find ('.phanterpwa-fixed-fulldisplay').addClass ('enabled');
 		}
 		else {

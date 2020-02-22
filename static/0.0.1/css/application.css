@@ -6187,6 +6187,7 @@ body.phanterpwa-lock .cmp_user_login-container {
 
 #phanterpwa-component-auth_user-container #toggle-cmp-bar_user {
   min-height: 64px;
+  max-height: 64px;
 }
 
 #phanterpwa-component-auth_user-container .cmp-bar_user-name-role #user_role_login {
@@ -6196,6 +6197,7 @@ body.phanterpwa-lock .cmp_user_login-container {
 
 #phanterpwa-component-auth_user-container .phanterpwa-component-auth_user-button-toggle {
   min-height: 64px;
+  max-height: 64px;
   min-width: 200px;
 }
 
@@ -6433,6 +6435,7 @@ body.p-lock #phanterpwa-component-left_bar-main_button.enabled {
 
 #phanterpwa-component-left_bar-main_button {
   min-height: 64px;
+  max-height: 64px;
   float: left;
   padding: 0 10px 0 10px;
   width: 50px;
@@ -7156,6 +7159,22 @@ body.p-lock #phanterpwa-component-left_bar-main_button.enabled {
   left: 20px;
 }
 
+.e-padding_bottom_10 {
+  padding-bottom: 10px !important;
+}
+
+.e-padding_top_10 {
+  padding-top: 10px !important;
+}
+
+.e-padding_left_10 {
+  padding-left: 10px !important;
+}
+
+.e-padding_right_10 {
+  margin-right: 10px !important;
+}
+
 .e-padding_20 {
   padding: 20px !important;
 }
@@ -7168,6 +7187,22 @@ body.p-lock #phanterpwa-component-left_bar-main_button.enabled {
 .e-padding_20.phanterpwa-container-section .phanterpwa-section > label {
   top: 10px;
   left: 30px;
+}
+
+.e-padding_bottom_20 {
+  padding-bottom: 20px !important;
+}
+
+.e-padding_top_20 {
+  padding-top: 20px !important;
+}
+
+.e-padding_left_20 {
+  padding-left: 20px !important;
+}
+
+.e-padding_right_20 {
+  padding-right: 20px !important;
 }
 
 .e-display_hidden {
@@ -7193,6 +7228,46 @@ body.p-lock #phanterpwa-component-left_bar-main_button.enabled {
 .e-title-alert {
   text-align: center !important;
   color: red !important;
+}
+
+.e-margin_20 {
+  margin: 20px;
+}
+
+.e-margin_bottom_20 {
+  margin-bottom: 20px !important;
+}
+
+.e-margin_top_20 {
+  margin-top: 20px !important;
+}
+
+.e-margin_left_20 {
+  margin-left: 20px !important;
+}
+
+.e-margin_right_20 {
+  margin-right: 20px !important;
+}
+
+.e-margin_10 {
+  margin: 10px !important;
+}
+
+.e-margin_bottom_10 {
+  margin-bottom: 10px !important;
+}
+
+.e-margin_top_10 {
+  margin-top: 10px !important;
+}
+
+.e-margin_left_10 {
+  margin-left: 10px !important;
+}
+
+.e-margin_right_10 {
+  margin-right: 10px !important;
 }
 
 /* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\components\flash.sass */
@@ -9788,22 +9863,22 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
 }
 
 /* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\form.sass */
-#phanterpwa-jsonform-profile {
+#form-profile {
   padding: 20px 0;
 }
 
-#phanterpwa-jsonform-profile #profile-image-user-container {
+#form-profile #profile-image-user-container {
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-#phanterpwa-jsonform-profile #profile-image-user-container .phanterpwa-centralizer-wrapper {
+#form-profile #profile-image-user-container .phanterpwa-centralizer-wrapper {
   margin: auto;
   box-shadow: 1px 1px 5px gray;
   border-radius: 2px;
 }
 
-#phanterpwa-jsonform-profile .profile_inputs_container {
+#form-profile .profile_inputs_container {
   padding-top: 20px;
   padding-bottom: 10px;
 }
