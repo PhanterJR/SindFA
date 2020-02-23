@@ -10095,16 +10095,11 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
 }
 
 .logo-svg {
-  height: 58px;
+  height: 64px;
   width: auto;
   font-size: 1rem;
   line-height: normal;
-  padding: 10px;
-}
-
-.logo-svg svg {
-  width: auto;
-  height: 100%;
+  padding: 5px;
 }
 
 /* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\materialize.sass */
