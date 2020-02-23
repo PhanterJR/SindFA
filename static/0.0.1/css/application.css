@@ -10068,25 +10068,30 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
 
 /* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\logo.sass */
 .logo_sindfa_fil1 {
-  fill: url(#id_logo_sindfa0);
+  fill: white;
+  fill-opacity: 0.501961;
 }
 
 .logo_sindfa_fil0 {
-  fill: url(#id_logo_sindfa2);
+  fill: url(#logo_sindfa_id4);
+  fill-rule: nonzero;
 }
 
 .logo_sindfa_fil3 {
-  fill: url(#id_logo_sindfa3);
-  fill-rule: nonzero;
+  fill: url(#logo_sindfa_id0);
 }
 
 .logo_sindfa_fil2 {
-  fill: url(#id_logo_sindfa1);
+  fill: url(#logo_sindfa_id2);
+}
+
+.logo_sindfa_fil5 {
+  fill: url(#logo_sindfa_id3);
+  fill-rule: nonzero;
 }
 
 .logo_sindfa_fil4 {
-  fill: url(#id_logo_sindfa4);
-  fill-rule: nonzero;
+  fill: url(#logo_sindfa_id1);
 }
 
 .logo-svg {
