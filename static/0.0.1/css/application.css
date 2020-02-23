@@ -10102,6 +10102,11 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
   padding: 5px;
 }
 
+.logo-svg svg {
+  width: auto;
+  height: 100%;
+}
+
 /* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\materialize.sass */
 .phanterpwa-materialize-input-text,
 .phanterpwa-materialize-input-password,
