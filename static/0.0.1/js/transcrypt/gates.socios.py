@@ -177,7 +177,6 @@ class Socios(helpers.XmlConstructor):
         sorted_field = widgets["socios-table-head"].sorted_field()
         self._get_data_search(search=search, field=field, orderby=sorted_field[0], sort=sorted_field[1], page=page)
 
-
     def process_data(self, json):
         def onSearch(el):
             search_value = jQuery("#phanterpwa-input-search").val()

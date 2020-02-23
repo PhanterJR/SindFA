@@ -10067,23 +10067,26 @@ ul.phanterpwa-widget-select-options-wrapper li .phanterpwa-widget-select-li-icon
 }
 
 /* SASS Source Code: D:\GitHub\SindFA\apps\sindfa\sources\styles\extends\logo.sass */
-.logo_fil0 {
-  fill: #757575;
+.logo_sindfa_fil1 {
+  fill: url(#id_logo_sindfa0);
+}
+
+.logo_sindfa_fil0 {
+  fill: url(#id_logo_sindfa2);
+}
+
+.logo_sindfa_fil3 {
+  fill: url(#id_logo_sindfa3);
   fill-rule: nonzero;
 }
 
-.logo_fil1 {
-  fill: #757575;
-  fill-rule: nonzero;
+.logo_sindfa_fil2 {
+  fill: url(#id_logo_sindfa1);
 }
 
-.logo_fil3 {
-  fill: #fff59d;
+.logo_sindfa_fil4 {
+  fill: url(#id_logo_sindfa4);
   fill-rule: nonzero;
-}
-
-.logo_fil2 {
-  fill: url("#logo_id0");
 }
 
 .logo-svg {
