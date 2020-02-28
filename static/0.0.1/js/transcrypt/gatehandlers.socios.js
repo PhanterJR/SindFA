@@ -1,4 +1,4 @@
-// Transcrypt'ed from Python, 2020-02-28 06:05:17
+// Transcrypt'ed from Python, 2020-02-28 15:47:19
 import {AssertionError, AttributeError, BaseException, DeprecationWarning, Exception, IndexError, IterableError, KeyError, NotImplementedError, RuntimeWarning, StopIteration, UserWarning, ValueError, Warning, __JsIterator__, __PyIterator__, __Terminal__, __add__, __and__, __call__, __class__, __envir__, __eq__, __floordiv__, __ge__, __get__, __getcm__, __getitem__, __getslice__, __getsm__, __gt__, __i__, __iadd__, __iand__, __idiv__, __ijsmod__, __ilshift__, __imatmul__, __imod__, __imul__, __in__, __init__, __ior__, __ipow__, __irshift__, __isub__, __ixor__, __jsUsePyNext__, __jsmod__, __k__, __kwargtrans__, __le__, __lshift__, __lt__, __matmul__, __mergefields__, __mergekwargtrans__, __mod__, __mul__, __ne__, __neg__, __nest__, __or__, __pow__, __pragma__, __proxy__, __pyUseJsNext__, __rshift__, __setitem__, __setproperty__, __setslice__, __sort__, __specialattrib__, __sub__, __super__, __t__, __terminal__, __truediv__, __withblock__, __xor__, abs, all, any, assert, bool, bytearray, bytes, callable, chr, copy, deepcopy, delattr, dict, dir, divmod, enumerate, filter, float, getattr, hasattr, input, int, isinstance, issubclass, len, list, map, max, min, object, ord, pow, print, property, py_TypeError, py_iter, py_metatype, py_next, py_reversed, py_typeof, range, repr, round, set, setattr, sorted, str, sum, tuple, zip} from './org.transcrypt.__runtime__.js';
 import * as preloaders from './phanterpwa.apptools.preloaders.js';
 import * as modal from './phanterpwa.apptools.components.modal.js';
@@ -470,7 +470,6 @@ export var Socio =  __class__ ('Socio', [helpers.XmlConstructor], {
 			self.get_form_socio (id_socio);
 		}
 		else if (action == 'visualizar') {
-			window.PhanterPWA.flash ('Teste');
 			self.visualizar (id_socio, index_instance.request.params);
 		}
 	});},
@@ -571,7 +570,6 @@ export var Socio =  __class__ ('Socio', [helpers.XmlConstructor], {
 		}
 		else {
 		}
-		console.log (widget_instance);
 		var content = DIV (forms.FormWidget ('dependentes', 'nome', __kwargtrans__ (dict ({'value': '', 'label': 'Nome', 'type': 'string', '_placeholder': 'Nome do Dependente', '_class': 'p-col w1p100 w3p50 w4p75'}))), forms.FormWidget ('dependentes', 'data_de_nascimento', __kwargtrans__ (dict ({'value': '', 'label': 'Data de Nascimento', 'type': 'date', '_class': 'p-col w1p100 w3p50 w4p25', 'format': 'dd/MM/yyyy', 'mask': 'dd/MM/yyyy'}))), __kwargtrans__ ({_class: 'p-row'}));
 		var footer = DIV (forms.SubmitButton ('adicionar_dependentes', 'Adicionar', __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), __kwargtrans__ ({_class: 'phanterpwa-form-buttons-container'}));
 		self.modal_dependentes = modal.Modal (widget_instance.target_selector, __kwargtrans__ (dict ({'title': 'Adicionar novo Dependente', 'content': content, 'footer': footer, 'form': 'dependentes'})));

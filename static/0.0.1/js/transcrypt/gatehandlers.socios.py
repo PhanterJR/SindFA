@@ -345,7 +345,6 @@ class Socio(helpers.XmlConstructor):
         if action == "editar" or id_socio == "novo":
             self.get_form_socio(id_socio)
         elif action == "visualizar":
-            window.PhanterPWA.flash("Teste")
             self.visualizar(id_socio, index_instance.request.params)
 
     def visualizar(self, id_socio, params):
@@ -464,7 +463,6 @@ class Socio(helpers.XmlConstructor):
         self.binds()
 
     def modal_add_dependentes(self, widget_instance):
-        console.log(widget_instance)
         content = DIV(
 
             forms.FormWidget(
