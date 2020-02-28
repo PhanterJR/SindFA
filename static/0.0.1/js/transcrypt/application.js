@@ -1,4 +1,4 @@
-// Transcrypt'ed from Python, 2020-02-21 00:47:27
+// Transcrypt'ed from Python, 2020-02-28 04:51:35
 var config = {};
 var gatekeeper = {};
 var websocket = {};
@@ -15,12 +15,12 @@ import * as application from './phanterpwa.apptools.application.js';
 var __name__ = '__main__';
 export var I = helpers.XmlConstructor.tagger ('i');
 export var I18N = helpers.I18N;
-websocket.start ();
 export var MyApp = application.PhanterPWA (config.CONFIG, gatekeeper.gates);
 MyApp.add_component (auth_user.AuthUser ('#layout-auth_user-container'));
 MyApp.add_component (auth_user.LeftBarMainButton ('#layout-main_button-container'));
 MyApp.add_component (auth_user.LeftBar ('#layout-left_bar-container'));
 MyApp.open_current_way ();
+websocket.start ();
 window.onbeforeunload = (function __lambda__ () {
 	return 'Your work will be lost.';
 });

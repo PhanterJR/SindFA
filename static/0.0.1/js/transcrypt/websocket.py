@@ -18,10 +18,18 @@ def onError(evt):
         if r:
             location.reload()
 
+def onOpen(ws):
+    console.log("opening websocket")
+    if "PhanterPWA" in window:
+        authorization = window.PhanterPWA.get_authorization()
+        if authorization is not None:
+            ws.send(JSON.stringify({"phanterpwa-authorization": authorization}))
+
 def start(check_compilation=False):
     API_WEBSOCKET_ADDRESS = config.CONFIG["CONFIGJS"]['api_websocket_address']
     ws = __new__(WebSocket(API_WEBSOCKET_ADDRESS))
-    ws.onopen = lambda: (ws.send("Hello, world"), console.log("opening"))
+    window.PhanterPWAWS = ws
+    ws.onopen = lambda: onOpen(ws)
     ws.onmessage = lambda evt: console.log(evt.data)
     ws.onerror = lambda evt: onError(evt)
     ws.onclose = lambda event: onConectionClose(this, event)

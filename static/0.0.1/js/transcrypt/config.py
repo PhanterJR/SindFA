@@ -11,11 +11,11 @@ CONFIG = {
         "name": "SindFA",
         "title": "PhanterEDU",
         "version": "0.0.1",
-        "compilation": 2895,
+        "compilation": 3049,
         "author": "PhanterJR<phanterjr@conexaodidata.com.br>",
         "debug": True,
         "packaged": False,
-        "path": "D:\\GitHub\\SindFA"
+        "path": "D:\\Github\\SindFA"
     },
     "CONFIGJS": {
         "api_server_address": "https://sindfa.conexaodidata.com.br",
@@ -26,7 +26,7 @@ CONFIG = {
         "pt-BR": {
             " of ": " de ",
             "Activate": "Ativar",
-            "Activation code": "Código de Ativação",
+            "Activation code": "C\u00f3digo de Ativa\u00e7\u00e3o",
             "April": "Abril",
             "August": "Agosto",
             "Change Password": "Mudar senha",
@@ -42,7 +42,7 @@ CONFIG = {
             "Fri": "Sex",
             "Friday": "Sexta",
             "Home": "Principal",
-            "I already have an account": "Eu já tenho uma conta",
+            "I already have an account": "Eu j\u00e1 tenho uma conta",
             "January": "Janeiro",
             "July": "Julho",
             "June": "Junho",
@@ -50,7 +50,7 @@ CONFIG = {
             "Lock": "Bloquear",
             "Login": "Login",
             "Logout": "Sair",
-            "March": "Março",
+            "March": "Mar\u00e7o",
             "May": "Mai",
             "Mon": "Seg",
             "Monday": "Segunda",
@@ -59,25 +59,25 @@ CONFIG = {
             "New password Repeat": "Repetir nova senha",
             "November": "Novembro",
             "October": "Outubro",
-            "Page ": "Página ",
+            "Page ": "P\u00e1gina ",
             "Password": "Senha",
             "Password Repeat": "Repetir Senha",
             "Profile": "Perfil",
             "Recover password": "Recuperar Senha",
             "Repeat Password": "Repetir Senha",
-            "START": "INÍCIO",
+            "START": "IN\u00cdCIO",
             "Sat": "Sab",
-            "Save Changes": "Salvar Mudanças",
+            "Save Changes": "Salvar Mudan\u00e7as",
             "September": "Setembro",
-            "Start": "Início",
+            "Start": "In\u00edcio",
             "Submit": "Enviar",
             "Sun": "Dom",
             "Thu": "Qui",
             "Tue": "Ter",
-            "User": "Usuário",
+            "User": "Usu\u00e1rio",
             "Wed": "Qua",
             "root": "root",
-            "user": "usuário"
+            "user": "usu\u00e1rio"
         }
     }
 }

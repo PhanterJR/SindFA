@@ -15,10 +15,10 @@ I = helpers.XmlConstructor.tagger("i")
 I18N = helpers.I18N
 
 
-websocket.start()
 MyApp = application.PhanterPWA(config.CONFIG, gatekeeper.gates)
 MyApp.add_component(auth_user.AuthUser("#layout-auth_user-container"))
 MyApp.add_component(auth_user.LeftBarMainButton("#layout-main_button-container"))
 MyApp.add_component(auth_user.LeftBar("#layout-left_bar-container"))
 MyApp.open_current_way()
+websocket.start()
 window.onbeforeunload = lambda: "Your work will be lost."
