@@ -1,5 +1,3 @@
-from org.transcrypt.stubs.browser import __pragma__
-
 import phanterpwa.apptools.handler as handler
 import phanterpwa.apptools.helpers as helpers
 import phanterpwa.apptools.validations as validations
@@ -8,6 +6,7 @@ import phanterpwa.apptools.components.left_bar as left_bar
 import phanterpwa.apptools.forms as forms
 import phanterpwa.apptools.components.modal as modal
 import phanterpwa.apptools.preloaders as preloaders
+from org.transcrypt.stubs.browser import __pragma__
 
 __pragma__('alias', "jQuery", "$")
 __pragma__('skip')
@@ -92,8 +91,6 @@ class Index(handler.GateHandler):
 
 
 class Socios(helpers.XmlConstructor):
-    """way: socios"""
-
     def __init__(self, index_instance):
         self.index_instance = index_instance
         html = DIV(
@@ -367,15 +364,16 @@ class Socio(helpers.XmlConstructor):
                             _class="carteira-image"
                         ),
                         DIV(
-
                             DIV(
                                 DIV(
                                     DIV(
                                         "NOME",
                                         _class="carteira-data-field"
                                     ),
-                                    DIV(nome_completo,
-                                        _class="carteira-data-nome carteira-data-value"),
+                                    DIV(
+                                        nome_completo,
+                                        _class="carteira-data-nome carteira-data-value"
+                                    ),
                                     _class="carteira-data-col"
                                 ),
                                 _class="p-col w1p100"
@@ -383,11 +381,13 @@ class Socio(helpers.XmlConstructor):
                             DIV(
                                 DIV(
                                     DIV(
-                                        "MATRÍCULA",
+                                        'MATRÍCULA',
                                         _class="carteira-data-field"
                                     ),
-                                    DIV(id_socio,
-                                        _class="carteira-data-matricula carteira-data-value"),
+                                    DIV(
+                                        id_socio,
+                                        _class="carteira-data-matricula carteira-data-value"
+                                    ),
                                     _class="carteira-data-col"
                                 ),
                                 _class="p-col w1p40"

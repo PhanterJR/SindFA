@@ -3,7 +3,6 @@ import phanterpwa.apptools.helpers as helpers
 import phanterpwa.apptools.components.auth_user as auth_user
 import config
 import gatekeeper
-import websocket
 from org.transcrypt.stubs.browser import __pragma__
 
 __pragma__("skip")
@@ -20,5 +19,3 @@ MyApp.add_component(auth_user.AuthUser("#layout-auth_user-container"))
 MyApp.add_component(auth_user.LeftBarMainButton("#layout-main_button-container"))
 MyApp.add_component(auth_user.LeftBar("#layout-left_bar-container"))
 MyApp.open_current_way()
-websocket.start()
-window.onbeforeunload = lambda: "Your work will be lost."

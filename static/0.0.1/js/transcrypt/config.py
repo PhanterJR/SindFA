@@ -9,9 +9,9 @@
 CONFIG = {
     "PROJECT": {
         "name": "SindFA",
-        "title": "PhanterEDU",
+        "title": "SindFA",
         "version": "0.0.1",
-        "compilation": 3050,
+        "compilation": 3255,
         "author": "PhanterJR<phanterjr@conexaodidata.com.br>",
         "debug": True,
         "packaged": False,
@@ -19,7 +19,7 @@ CONFIG = {
     },
     "CONFIGJS": {
         "api_server_address": "https://sindfa.conexaodidata.com.br",
-        "api_websocket_address": "wss://sindfa.conexaodidata.com.br/websocket",
+        "api_websocket_address": "wss://sindfa.conexaodidata.com.br/api/websocket",
         "timeout_to_resign": 600
     },
     "I18N": {
@@ -79,5 +79,12 @@ CONFIG = {
             "root": "root",
             "user": "usu\u00e1rio"
         }
+    },
+    "APP": {
+        "name": "sindfa",
+        "title": "PhanterPWAClient"
+    },
+    "SOCIAL_LOGINS": {
+        "google": "https://sindfa.conexaodidata.com.br/api/auth/google/prompt"
     }
 }

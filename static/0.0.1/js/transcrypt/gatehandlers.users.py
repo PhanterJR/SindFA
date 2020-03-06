@@ -1,4 +1,3 @@
-from org.transcrypt.stubs.browser import __pragma__
 
 import phanterpwa.apptools.handler as handler
 import phanterpwa.apptools.helpers as helpers
@@ -8,6 +7,7 @@ import phanterpwa.apptools.components.left_bar as left_bar
 import phanterpwa.apptools.forms as forms
 import phanterpwa.apptools.components.modal as modal
 import phanterpwa.apptools.preloaders as preloaders
+from org.transcrypt.stubs.browser import __pragma__
 
 __pragma__('alias', "jQuery", "$")
 __pragma__('skip')
