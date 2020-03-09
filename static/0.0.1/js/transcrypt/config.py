@@ -11,7 +11,7 @@ CONFIG = {
         "name": "SindFA",
         "title": "SindFA",
         "version": "0.0.1",
-        "compilation": 3267,
+        "compilation": 3273,
         "author": "PhanterJR<phanterjr@conexaodidata.com.br>",
         "debug": True,
         "packaged": False,

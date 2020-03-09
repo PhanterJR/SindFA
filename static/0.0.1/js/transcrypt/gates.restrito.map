@@ -1,8 +1,0 @@
-{
-	"version": 3,
-	"file": "gates.restrito.js",
-	"sources": [
-		"gates.restrito.py"
-	],
-	"mappings": "AAAA;AAAA;AAIA;AAFA;AADA;AADA;AAAA;AAcA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AAGA;AAAA;AACA;AACA;AACA;AACA;AAAA;AAEA;AACA;AAAA;AAEA;AA4BA;AAyEA;AAAA;AAIA;AAGA;AANA;AAAA;AA3IA"
-}

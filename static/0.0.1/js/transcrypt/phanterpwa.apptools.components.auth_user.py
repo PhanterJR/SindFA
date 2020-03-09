@@ -360,6 +360,7 @@ class ModalLogin(modal.Modal):
             role = I18N(self.last_auth_user.role)
 
         self.xml_social_logins = DIV(_class='phanterpwa-modal-login-social-buttons-container')
+        self._icons_social_login = {}
         if self._has_social_logins:
             for x in self._social_logins:
                 icon = ""
@@ -367,6 +368,7 @@ class ModalLogin(modal.Modal):
                 if isinstance(x, list) and len(x) == 2:
                     icon = x[1]
                     social_name = x[0]
+                    self._icons_social_login[social_name] = icon
                 self.xml_social_logins.append(DIV(
                     DIV(
                         icon,
@@ -465,6 +467,8 @@ class ModalLogin(modal.Modal):
         if self.last_auth_user is not None and self.last_auth_user is not js_undefined:
             tcontent.addClass("has_auth_user")
             if self.last_auth_user['social_login'] is not None and self.last_auth_user['social_login'] is not js_undefined:
+                self._icons_social_login.get(self.last_auth_user, "")
+
                 tcontent.addClass("auth_user_logged_by_social_login")
                 current_social_name = self.last_auth_user['social_login']
                 button_login_by_social = forms.FormButton(
