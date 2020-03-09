@@ -11,7 +11,7 @@ CONFIG = {
         "name": "SindFA",
         "title": "SindFA",
         "version": "0.0.1",
-        "compilation": 3255,
+        "compilation": 3267,
         "author": "PhanterJR<phanterjr@conexaodidata.com.br>",
         "debug": True,
         "packaged": False,
@@ -85,6 +85,7 @@ CONFIG = {
         "title": "PhanterPWAClient"
     },
     "SOCIAL_LOGINS": {
-        "google": "https://sindfa.conexaodidata.com.br/api/auth/google/prompt"
+        "google": "https://sindfa.conexaodidata.com.br/api/auth/google/prompt",
+        "facebook": "https://sindfa.conexaodidata.com.br/api/auth/facebook/prompt"
     }
 }

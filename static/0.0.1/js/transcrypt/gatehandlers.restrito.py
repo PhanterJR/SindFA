@@ -63,7 +63,8 @@ class Index(handler.GateHandler):
                                     "_phanterpwa-way": "socios"
                                 }
                             ),
-                            DIV("Aqui permite ao administrador visualizar, adicionar, editar o cadastro de associados.", _class='promo-content'),
+                            DIV("Aqui permite ao administrador visualizar, adicionar, editar o cadastro de associados.",
+                                _class='promo-content'),
                             **{"_class": "promo-container"}
                         ),
                         _class='p-col w1p100 w3p50 w4p25'

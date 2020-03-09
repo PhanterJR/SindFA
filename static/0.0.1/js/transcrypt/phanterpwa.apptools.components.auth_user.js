@@ -1,4 +1,4 @@
-// Transcrypt'ed from Python, 2020-03-06 00:39:49
+// Transcrypt'ed from Python, 2020-03-09 05:53:39
 import {AssertionError, AttributeError, BaseException, DeprecationWarning, Exception, IndexError, IterableError, KeyError, NotImplementedError, RuntimeWarning, StopIteration, UserWarning, ValueError, Warning, __JsIterator__, __PyIterator__, __Terminal__, __add__, __and__, __call__, __class__, __envir__, __eq__, __floordiv__, __ge__, __get__, __getcm__, __getitem__, __getslice__, __getsm__, __gt__, __i__, __iadd__, __iand__, __idiv__, __ijsmod__, __ilshift__, __imatmul__, __imod__, __imul__, __in__, __init__, __ior__, __ipow__, __irshift__, __isub__, __ixor__, __jsUsePyNext__, __jsmod__, __k__, __kwargtrans__, __le__, __lshift__, __lt__, __matmul__, __mergefields__, __mergekwargtrans__, __mod__, __mul__, __ne__, __neg__, __nest__, __or__, __pow__, __pragma__, __proxy__, __pyUseJsNext__, __rshift__, __setitem__, __setproperty__, __setslice__, __sort__, __specialattrib__, __sub__, __super__, __t__, __terminal__, __truediv__, __withblock__, __xor__, abs, all, any, assert, bool, bytearray, bytes, callable, chr, copy, deepcopy, delattr, dict, dir, divmod, enumerate, filter, float, getattr, hasattr, input, int, isinstance, issubclass, len, list, map, max, min, object, ord, pow, print, property, py_TypeError, py_iter, py_metatype, py_next, py_reversed, py_typeof, range, repr, round, set, setattr, sorted, str, sum, tuple, zip} from './org.transcrypt.__runtime__.js';
 import * as handler from './phanterpwa.apptools.handler.js';
 import * as application from './phanterpwa.apptools.application.js';
@@ -14,7 +14,7 @@ export var DIV = helpers.XmlConstructor.tagger ('div');
 export var FORM = helpers.XmlConstructor.tagger ('form');
 export var SPAN = helpers.XmlConstructor.tagger ('span');
 export var IMG = helpers.XmlConstructor.tagger ('img', true);
-export var I = helpers.XmlConstructor.tagger ('I');
+export var I = helpers.XmlConstructor.tagger ('i');
 export var I18N = helpers.I18N;
 export var CONCATENATE = helpers.CONCATENATE;
 export var AuthUser =  __class__ ('AuthUser', [application.Component], {
@@ -441,19 +441,19 @@ export var ModalLogin =  __class__ ('ModalLogin', [modal.Modal], {
 		else {
 			self.AuthUser = AuthUserCmp;
 		}
-		self.auth_user = window.PhanterPWA.get_last_auth_user ();
+		self.last_auth_user = window.PhanterPWA.get_last_auth_user ();
 		var first_name = '';
 		var last_name = '';
 		var email = '';
 		var role = I18N ('User');
 		var user_image = window.PhanterPWA.get_last_auth_user_image ();
 		var remember_me = false;
-		if (self.auth_user !== null && self.auth_user !== undefined) {
-			var first_name = self.auth_user.first_name;
-			var last_name = self.auth_user.last_name;
-			var email = self.auth_user.email;
-			var remember_me = self.auth_user.remember_me;
-			var role = I18N (self.auth_user.role);
+		if (self.last_auth_user !== null && self.last_auth_user !== undefined) {
+			var first_name = self.last_auth_user.first_name;
+			var last_name = self.last_auth_user.last_name;
+			var email = self.last_auth_user.email;
+			var remember_me = self.last_auth_user.remember_me;
+			var role = I18N (self.last_auth_user.role);
 		}
 		self.xml_social_logins = DIV (__kwargtrans__ ({_class: 'phanterpwa-modal-login-social-buttons-container'}));
 		if (self._has_social_logins) {
@@ -472,17 +472,18 @@ export var ModalLogin =  __class__ ('ModalLogin', [modal.Modal], {
 			tcontent.addClass ('has_social_logins');
 		}
 		var button_login_by_social = '';
-		if (self.auth_user !== null && self.auth_user !== undefined) {
+		if (self.last_auth_user !== null && self.last_auth_user !== undefined) {
 			tcontent.addClass ('has_auth_user');
-			if (self.auth_user ['social_login'] !== null && self.auth_user ['social_login'] !== undefined) {
+			if (self.last_auth_user ['social_login'] !== null && self.last_auth_user ['social_login'] !== undefined) {
 				tcontent.addClass ('auth_user_logged_by_social_login');
-				var button_login_by_social = forms.FormButton ('social_login-{0}'.format (social_name), CONCATENATE (icon, I18N ('Continue using {0}'.format (str (social_name).capitalize ()), __kwargtrans__ (dict ({'_pt-br': 'Continuar com {0}'.format (str (social_name).capitalize ())})))), __kwargtrans__ (dict ({'_class': 'btn-social_login wave_on_click waves-phanterpwa', '_data-social_login': social_name})));
+				var current_social_name = self.last_auth_user ['social_login'];
+				var button_login_by_social = forms.FormButton ('social_login-{0}'.format (current_social_name), CONCATENATE (icon, I18N ('Continue using {0}'.format (str (current_social_name).capitalize ()), __kwargtrans__ (dict ({'_pt-br': 'Continuar com {0}'.format (str (current_social_name).capitalize ())})))), __kwargtrans__ (dict ({'_class': 'btn-social_login wave_on_click waves-phanterpwa', '_data-social_login': current_social_name})));
 			}
 		}
 		var tfooter = DIV (forms.CaptchaContainer ('login', preloaders.android), DIV (DIV (forms.SubmitButton ('login', I18N ('Login', __kwargtrans__ (dict ({'_pt-br': 'Login'}))), __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), __kwargtrans__ ({_class: 'hidden_on_its_social_login'})), DIV (button_login_by_social, __kwargtrans__ ({_class: 'hidden_on_not_has_auth_user'})), forms.FormButton ('register', I18N ('Create an account', __kwargtrans__ (dict ({'_pt-br': 'Criar uma conta'}))), __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), forms.FormButton ('password', I18N ('Recover password', __kwargtrans__ (dict ({'_pt-br': 'Esqueci a senha'}))), __kwargtrans__ ({_class: 'btn-autoresize wave_on_click waves-phanterpwa'})), __kwargtrans__ ({_class: 'phanterpwa-form-buttons-container'})), __kwargtrans__ ({_class: 'p-col w1p100'})).jquery ();
-		if (self.auth_user !== null && self.auth_user !== undefined) {
+		if (self.last_auth_user !== null && self.last_auth_user !== undefined) {
 			tfooter.addClass ('has_auth_user');
-			if (self.auth_user ['social_login'] !== null && self.auth_user ['social_login'] !== undefined) {
+			if (self.last_auth_user ['social_login'] !== null && self.last_auth_user ['social_login'] !== undefined) {
 				tfooter.addClass ('its_social_login');
 			}
 		}
@@ -1690,13 +1691,8 @@ export var LeftBarAuthUserLogin =  __class__ ('LeftBarAuthUserLogin', [left_bar.
 		}
 		else {
 		}
-		sessionStorage.removeItem ('phanterpwa-authorization');
-		sessionStorage.removeItem ('auth_user');
-		window.PhanterPWA.open_default_way ();
-		var LeftBar = window.PhanterPWA.Components ['left_bar'];
-		if (LeftBar !== null && LeftBar !== undefined) {
-			LeftBar.reload ();
-		}
+		window.PhanterPWA.logout ();
+		self.start ();
 		window.PhanterPWA.Components ['auth_user'].start ();
 	});},
 	get start () {return __get__ (this, function (self) {
@@ -2050,6 +2046,22 @@ export var LeftBarAuthUserNoLogin =  __class__ ('LeftBarAuthUserNoLogin', [left_
 });
 export var Profile =  __class__ ('Profile', [handler.GateHandler], {
 	__module__: __name__,
+	get initialize () {return __get__ (this, function (self) {
+		if (arguments.length) {
+			var __ilastarg0__ = arguments.length - 1;
+			if (arguments [__ilastarg0__] && arguments [__ilastarg0__].hasOwnProperty ("__kwargtrans__")) {
+				var __allkwargs0__ = arguments [__ilastarg0__--];
+				for (var __attrib0__ in __allkwargs0__) {
+					switch (__attrib0__) {
+						case 'self': var self = __allkwargs0__ [__attrib0__]; break;
+					}
+				}
+			}
+		}
+		else {
+		}
+		self.requires_login = true;
+	});},
 	get after_submit () {return __get__ (this, function (self, data, ajax_status) {
 		if (arguments.length) {
 			var __ilastarg0__ = arguments.length - 1;
