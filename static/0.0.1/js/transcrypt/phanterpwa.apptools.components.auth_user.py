@@ -467,7 +467,7 @@ class ModalLogin(modal.Modal):
         if self.last_auth_user is not None and self.last_auth_user is not js_undefined:
             tcontent.addClass("has_auth_user")
             if self.last_auth_user['social_login'] is not None and self.last_auth_user['social_login'] is not js_undefined:
-                self._icons_social_login.get(self.last_auth_user, "")
+                icon = self._icons_social_login.get(self.last_auth_user, "")
 
                 tcontent.addClass("auth_user_logged_by_social_login")
                 current_social_name = self.last_auth_user['social_login']
